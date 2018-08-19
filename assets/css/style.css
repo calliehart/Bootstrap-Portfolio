@@ -62,7 +62,8 @@ h1.page-header {
     font-weight: bold;
     font-size: 34px;
     background-color: #4aaaa5;
-    color: #ffffff;  
+    color: #ffffff; 
+    height: 100%; 
 }
 
 div.page-header {
@@ -82,6 +83,10 @@ div.page-header {
     color: #777;
 }
 
+#headerWrapper {
+    width: 75%;
+}
+
 #footer {
     border-top: #4aaaa5 solid 5px;
     background-color: #666;
@@ -92,4 +97,59 @@ div.page-header {
     bottom: 0;
     height: 50px;
     width: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+    .navbar {
+        width: 980px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    #headerWrapper {
+        width: 768px;
+        margin: 0;
+    }
+    .navbar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h1.page-header {
+        height: 100%;
+        padding: 20px;
+        width: 768px;
+        text-align: center;
+        margin: 0;
+        left: 0;
+        top: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 640px) {
+    
+    #headerWrapper {
+        width: 640px;
+        margin: 0;
+    }
+    .navbar {
+        position: static; 
+        margin: 0;
+        padding: 0;
+        width: 100%;  
+    }
+    h1.page-header {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    
+    li {
+        align-items: center;
+
+    }
+   
+
 }
